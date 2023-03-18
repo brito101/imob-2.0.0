@@ -1,0 +1,9 @@
+@import "variables";
+
+$theme-colors: (
+'front': $color-front-default,
+'opposit': $color-front-opposit,
+'support': $color-front-support
+);
+
+@import "~bootstrap/scss/bootstrap";

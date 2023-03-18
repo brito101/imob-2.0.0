@@ -1,0 +1,36 @@
+.main_header {
+    .header_bar {
+        background: linear-gradient(to right, #7D221F 0%,  #C93732 100%);
+
+        p {
+            font-size: 0.875em;
+            color:#FBFBFB;
+        }
+
+        i {
+            font-size: 1.6em;
+        }
+    }
+}
+
+.brand-image-custom {
+    width: 360px;
+}
+
+@media(min-width: 354px) and (max-width: 465px) {
+    .brand-image-custom {
+        width: 250px;
+    }
+}
+
+@media(min-width: 304px) and (max-width: 353px) {
+    .brand-image-custom {
+        width: 200px;
+    }
+}
+
+@media(max-width: 303px) {
+    .brand-image-custom {
+        width: 180px;
+    }
+}

@@ -1,0 +1,57 @@
+@import "variables";
+
+@import "addons/font-icons";
+@import "addons/font-icons-reset";
+
+@import "~bootstrap-select/dist/css/bootstrap-select.min.css";
+@import "addons/bootstrap-select-reset";
+
+@import "addons/lightbox-reset";
+
+.img-responsive-16by9 {
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.carousel-item {
+
+    img {
+        height: 100%;
+    }
+}
+
+@import "theme/header";
+@import "theme/footer";
+
+@import "folds/list-properties";
+@import "folds/optin";
+
+@import "pages/home";
+@import "pages/contact";
+@import "pages/property";
+@import "pages/filter";
+
+.btn-custom {
+    background-image: linear-gradient(to right, #7D221F 0%,  #C93732 50%,  #7D221F 100%);
+
+    background-size: 200% auto;
+    transition-duration: 0.5s;
+    text-decoration: none!important;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-radius: 0.3rem;
+    text-align: center;
+
+    &:hover {
+        background-position: right center;
+    }
+}
+
+.bg-custom {
+    background-image: linear-gradient(to right, #7D221F 0%,  #C93732 100%);
+}

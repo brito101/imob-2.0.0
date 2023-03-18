@@ -1,0 +1,43 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+/** Components not present in boot */
+@import "components/form";
+@import "components/paginator";
+@import "components/icons";
+
+/** CSS App */
+@import "apps/app_realty";
+
+.no-content {
+    width: 100%;
+    flex-basis: 100%;
+    background-color: $dash-background;
+    color: $color-gray-medium;
+    justify-content: center;
+    align-content: center;
+    -webkit-border-radius: $radius-normal;
+    -moz-border-radius: $radius-normal;
+    border-radius: $radius-normal;
+    text-align: center;
+    padding: 20px;
+}
+
+/** RWD */
+@media (min-width: $dash-rwd-breakpoint-1) {
+    .on_mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: $dash-rwd-breakpoint-1) {
+    .no_mobile {
+        display: none !important;
+    }
+}
